@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
 import { close, menu } from "../assets";
 import { navLinks } from "../data";
 
 const Navbar = () => {
   const [active, setActive] = useState("hero");
   const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const setScrolled = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
